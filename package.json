@@ -1,0 +1,19 @@
+{
+  "name": "mysql-to-mongodbatlas",
+  "version": "1.0.0",
+  "description": "A simple app to get data from mysql, clean it and send it to mongodb atlas.",
+  "main": "src/index.js",
+  "repository": "https://github.com/ri1anapolis/mysql-to-mongodbatlas.git",
+  "author": "André Martins <fmartins.andre@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "mongodb": "^3.5.9",
+    "mysql2": "^2.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}

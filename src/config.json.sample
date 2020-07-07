@@ -1,0 +1,23 @@
+{
+  "mysql": {
+    "query": "SELECT 'myQuery...'",
+    "connectionParameters": {
+      "host": "my.nice.ip.address",
+      "port": "myPort",
+      "database": "myDatabase",
+      "user": "myUser",
+      "password": "myPassword"
+    }
+  },
+  "mongo": {
+    "db": "myMongoDb",
+    "collection": "myCollection",
+    "connectionParameters": {
+      "uri": "mongodb+srv://myUser:myPassword@my-mongodb-cluster.mongodb.net/myCluster?retryWrites=true&w=majority",
+      "options": {
+        "useNewUrlParser": true,
+        "useUnifiedTopology": true
+      }
+    }
+  }
+}
