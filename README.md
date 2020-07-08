@@ -53,6 +53,19 @@ You can pass a configuration file path as argument to the script. If called with
 - `yarn start`: it'll load the default configuration file path.
 - `yarn start path/to/my/config.json`: it'll load the given file.
 
+#### Docker
+
+1. Build: `docker build -t mysql-to-mongodbatlas .`
+2. Run: `docker run --rm --mount type=bind,source="$(pwd)"/src/config.json,target=/app/src/config.json,readonly mysql-to-mongodbatlas`
+
+###### Notes
+
+- Give the container a name at the build time (`-t mysql-to-mongodbatlas`), it will make things easier to run afterwards.
+- Mount the configuration file at the run time (`type=bind,source="$(pwd)"/src/config.json,target=/app/src/config.json,readonly`) to make it work:
+  - On Linux or MacOS, the `$(pwd)` variable will expand to the current directory;
+  - Mount the configuration file to the default configuration path `/app/src/config.json`.
+  - You can pass a configuration path as argument, but you need to be sure you mounted the configuration file that matches this path.
+
 ## Scope
 
 This app will:
