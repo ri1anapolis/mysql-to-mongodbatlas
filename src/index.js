@@ -14,7 +14,7 @@ async function main() {
     )
   console.log(
     `::: Application: Reading ${
-      !process.argv[2] && "default "
+      !process.argv[2] ? "default " : ""
     }configuration file: "${configFile}"`
   )
 
