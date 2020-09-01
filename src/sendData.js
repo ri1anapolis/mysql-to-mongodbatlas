@@ -21,7 +21,7 @@ async function getData(data, { db, collection, connectionParameters }) {
     console.error(`::: MongoDB: ERROR => ${error}`)
   } finally {
     await client.close()
-    console.log(`::: MongoDB: Disconected from server!`)
+    console.log(`::: MongoDB: Disconnected from server!`)
   }
 }
 

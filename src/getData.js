@@ -16,7 +16,7 @@ async function getData({ query, connectionParameters }) {
   } catch (error) {
     console.error(`::: MySQL: ERROR => ${error}`)
   } finally {
-    console.log(`::: MySQL: Disconected from server "${host}"!`)
+    console.log(`::: MySQL: Disconnected from server "${host}"!`)
   }
 }
 
