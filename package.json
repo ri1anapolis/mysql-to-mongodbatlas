@@ -10,7 +10,7 @@
     "start": "node ."
   },
   "dependencies": {
-    "mongodb": "^3.5.9",
+    "mongodb": "^3.6.10",
     "mysql2": "^2.1.0"
   },
   "devDependencies": {
